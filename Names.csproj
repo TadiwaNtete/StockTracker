@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="28.0.1" />
+    <PackageReference Include="GData.Spreadsheets.Helpers" Version="2.2.0" />
+    <PackageReference Include="Google.Apis" Version="1.57.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.57.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.57.0" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.57.0.2727" />
+    <PackageReference Include="Google.GData.Client" Version="2.2.0.0" />
+    <PackageReference Include="Google.GData.Extensions" Version="2.2.0.0" />
+    <PackageReference Include="Google.GData.Spreadsheets" Version="2.2.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp2\NASDAQStockScraper.csproj" />
+    <ProjectReference Include="..\ConsoleApp4\ConsoleApp4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NASDAQStockScraper">
+      <HintPath>..\ConsoleApp2\bin\Release\net6.0\NASDAQStockScraper.dll</HintPath>
+    </Reference>
+    <Reference Include="ThapsLibrary">
+      <HintPath>..\ThapsLibrary\obj\Release\net6.0\ThapsLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
